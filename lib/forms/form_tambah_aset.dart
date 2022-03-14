@@ -208,6 +208,7 @@ class _FormState extends State<Form> {
                   print(_row_tambah_barang);
                 },
               ),
+              // for (int i = 0; i < _row_tambah_barang; i++) {Text("kontol")}
             ],
           ),
         )
