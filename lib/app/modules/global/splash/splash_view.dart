@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pwpb1/routes/pages.dart';
@@ -8,12 +10,6 @@ class Splash extends StatefulWidget {
 }
 
 class _SplashState extends State<Splash> {
-  @override
-  void initState() {
-    super.initState();
-    Future.delayed(Duration(seconds: 3), () => {Get.off(Routes.LOGIN)});
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -11,9 +11,6 @@ void main() {
     debugShowCheckedModeBanner: false,
     initialRoute: Routes.SPLASH,
     theme: appThemeData,
-    defaultTransition: Transition.fade,
-    initialBinding: SplashBinding(),
     getPages: AppPages.pages,
-    home: Splash(),
   ));
 }
