@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "333412822158",
+    "project_id": "camat-tapwpb",
+    "storage_bucket": "camat-tapwpb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333412822158:android:00278af42678365735eddf",
+        "android_client_info": {
+          "package_name": "com.example.pwpb1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333412822158-d3vk31slpmt3iaa8a2pjfav8bsp81ugc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pwpb1",
+            "certificate_hash": "2a389f2683eea72bb9d2511ece040f34b654149a"
+          }
+        },
+        {
+          "client_id": "333412822158-g5kircu6iigd11v5ulc5neg7qjlplr2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6ra3IaoEizYafFmHzen2qhbuM_3tn0Fs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333412822158-g5kircu6iigd11v5ulc5neg7qjlplr2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
