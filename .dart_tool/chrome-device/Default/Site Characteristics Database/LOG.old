@@ -1,3 +1,7 @@
-2022/02/26-16:34:17.942 f60 Reusing MANIFEST C:\Users\zahro\AppData\Local\Temp\flutter_tools.a0139399\flutter_tools_chrome_device.cc678b43\Default\Site Characteristics Database/MANIFEST-000001
-2022/02/26-16:34:17.943 f60 Recovering log #3
-2022/02/26-16:34:17.943 f60 Reusing old log C:\Users\zahro\AppData\Local\Temp\flutter_tools.a0139399\flutter_tools_chrome_device.cc678b43\Default\Site Characteristics Database/000003.log 
+2022/04/14-21:26:46.873 2018 Reusing MANIFEST C:\Users\zahro\AppData\Local\Temp\flutter_tools.1ee57371\flutter_tools_chrome_device.aed5c037\Default\Site Characteristics Database/MANIFEST-000001
+2022/04/14-21:26:46.874 2018 Recovering log #3
+2022/04/14-21:26:46.875 2018 Level-0 table #6: started
+2022/04/14-21:26:46.878 2018 Level-0 table #6: 359 bytes OK
+2022/04/14-21:26:46.878 2018 Recovering log #6
+2022/04/14-21:26:46.879 2018 Reusing old log C:\Users\zahro\AppData\Local\Temp\flutter_tools.1ee57371\flutter_tools_chrome_device.aed5c037\Default\Site Characteristics Database/000006.log 
+2022/04/14-21:26:46.881 2018 Delete type=0 #3
