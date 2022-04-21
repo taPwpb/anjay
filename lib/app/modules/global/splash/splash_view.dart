@@ -2,14 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:pwpb1/app/modules/global/splash/splash_controller.dart';
 import 'package:pwpb1/routes/pages.dart';
 
-class Splash extends StatefulWidget {
-  @override
-  State<Splash> createState() => _SplashState();
-}
-
-class _SplashState extends State<Splash> {
+class Splash extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

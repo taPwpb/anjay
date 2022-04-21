@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:pwpb1/app/modules/admin/dashboard/dashboard_binding.dart';
+import 'package:pwpb1/app/modules/admin/dashboard/dashboard_view.dart';
 import 'package:pwpb1/app/modules/admin/home/home_view.dart';
 import '../app/modules/global/login/login_binding.dart';
 import '../app/modules/global/login/login_view.dart';
@@ -13,5 +15,8 @@ abstract class AppPages {
         name: Routes.SPLASH, page: () => Splash(), binding: SplashBinding()),
     GetPage(name: Routes.LOGIN, page: () => Login(), binding: LoginBinding()),
     GetPage(name: Routes.PETUGASGUDANGHOME, page: () => PetugasGudangHome()),
+    GetPage(
+        name: Routes.PETUGASGUDANGDASHBOARD,
+        page: () => PetugasGudangDashboard(),binding: PetugasGudangDashboardBinding() ),
   ];
 }

@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
             return GetMaterialApp(
               debugShowCheckedModeBanner: false,
               initialRoute: snapshot.data != null
-                  ? Routes.PETUGASGUDANGHOME
+                  ? Routes.PETUGASGUDANGDASHBOARD
                   : Routes.SPLASH,
               theme: appThemeData,
               getPages: AppPages.pages,
