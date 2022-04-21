@@ -1,35 +1,102 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:pwpb1/app/modules/global/login/login_controller.dart';
 import 'package:pwpb1/routes/pages.dart';
 import 'package:pwpb1/core/theme/text_theme.dart';
 
-class Login extends StatelessWidget {
+class Login extends GetView<LoginController> {
   const Login({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Catat Manajemen Aset',
-      home: Scaffold(
-        resizeToAvoidBottomInset: false,
-        body: Stack(
-          children: [
-            Center(
-              child: Container(
-                width: size.width,
-                height: size.height,
-                color: const Color(0xff31314F),
-                child: CustomPaint(
-                  size: Size(size.width, size.height),
-                  painter: MyPainter(),
-                ),
+    final _emailController = TextEditingController();
+    final _passwordController = TextEditingController();
+    final loginController = Get.find<LoginController>();
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      body: Stack(
+        children: [
+          Container(
+            width: size.width,
+            height: size.height,
+            color: const Color(0xff31314F),
+            child: IgnorePointer(
+              child: CustomPaint(
+                size: Size(size.width, size.height),
+                painter: MyPainter(),
               ),
             ),
-            FormLogin(),
-          ],
-        ),
+          ),
+          // FormLogin(),
+          Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Align(
+                  child: Container(
+                    child: const Text(
+                      "Masuk",
+                      style: title_text_white,
+                    ),
+                  ),
+                ),
+                Container(
+                  width: size.width * 0.6,
+                  child: TextField(
+                    controller: _emailController,
+                    style: const TextStyle(color: Colors.white54),
+                    decoration: const InputDecoration(
+                      labelText: "email",
+                      labelStyle: TextStyle(
+                        color: Colors.white54,
+                      ),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  width: size.width * 0.6,
+                  child: TextField(
+                    controller: _passwordController,
+                    style: const TextStyle(color: Colors.white54),
+                    decoration: const InputDecoration(
+                      labelText: "password",
+                      labelStyle: TextStyle(
+                        color: Colors.white54,
+                      ),
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(color: Colors.white),
+                      ),
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    loginController.login(
+                        _emailController.text, _passwordController.text);
+                  },
+                  child: Container(
+                    margin: const EdgeInsets.only(top: 30),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 30),
+                    decoration: BoxDecoration(
+                        color: Colors.white54,
+                        border: Border.all(color: Colors.transparent),
+                        borderRadius: BorderRadius.circular(15)),
+                    child: const Text(
+                      "Login",
+                      style: TextStyle(fontSize: 20, color: Colors.white),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
@@ -71,86 +138,4 @@ class MyPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
-}
-
-class FormLogin extends StatelessWidget {
-  const FormLogin({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
-
-    return Container(
-      margin: const EdgeInsets.only(top: 80),
-      child: Column(
-        mainAxisSize: MainAxisSize.max,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Align(
-            child: Container(
-              child: const Text(
-                "Masuk",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 40,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
-          Container(
-            width: size.width * 0.6,
-            margin: const EdgeInsets.only(left: 30, top: 20),
-            child: const TextField(
-              style: TextStyle(color: Colors.white54),
-              decoration: InputDecoration(
-                hintText: "username",
-                hintStyle: TextStyle(
-                  color: Colors.white54,
-                ),
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white),
-                ),
-              ),
-            ),
-          ),
-          Container(
-            width: size.width * 0.6,
-            margin: const EdgeInsets.only(left: 30, top: 20),
-            child: const TextField(
-              obscureText: true,
-              style: TextStyle(color: Colors.white54),
-              decoration: InputDecoration(
-                hintText: "password",
-                hintStyle: TextStyle(
-                  color: Colors.white54,
-                ),
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white),
-                ),
-              ),
-            ),
-          ),
-          InkWell(
-            onTap: () {
-              Get.off(Routes.SPLASH);
-            },
-            child: Container(
-              margin: const EdgeInsets.only(top: 30),
-              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-              decoration: BoxDecoration(
-                  color: Colors.white54,
-                  border: Border.all(color: Colors.transparent),
-                  borderRadius: BorderRadius.circular(15)),
-              child: const Text(
-                "Login",
-                style: TextStyle(fontSize: 20, color: Colors.white),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
 }
