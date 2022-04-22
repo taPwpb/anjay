@@ -78,44 +78,45 @@ class PetugasGudangHome extends StatelessWidget {
                   ),
                 ],
               ),
+              ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: controller.notifs.length,
+                  itemBuilder: (context, position) {
+                    return Container(
+                      margin: const EdgeInsets.symmetric(
+                          vertical: 14, horizontal: 30),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Row(
+                        children: [
+                          Container(
+                            margin: const EdgeInsets.all(15),
+                            height: 20,
+                            width: 20,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color(0xffBA9D4B),
+                            ),
+                          ),
+                          Container(
+                            margin: const EdgeInsets.fromLTRB(5, 5, 20, 5),
+                            padding: const EdgeInsets.symmetric(
+                                vertical: 5, horizontal: 5),
+                            child: Text(
+                              controller.notifs[position],
+                              style: const TextStyle(
+                                  fontSize: 17, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  })
             ]),
           ),
           // generateList()
-          // ListView.builder(
-          //     itemCount: controller.notifs.length,
-          //     itemBuilder: (context, position) {
-          //       return Container(
-          //         margin:
-          //             const EdgeInsets.symmetric(vertical: 14, horizontal: 30),
-          //         decoration: BoxDecoration(
-          //           color: Colors.white,
-          //           borderRadius: BorderRadius.circular(20),
-          //         ),
-          //         child: Row(
-          //           children: [
-          //             Container(
-          //               margin: const EdgeInsets.all(15),
-          //               height: 20,
-          //               width: 20,
-          //               decoration: const BoxDecoration(
-          //                 shape: BoxShape.circle,
-          //                 color: Color(0xffBA9D4B),
-          //               ),
-          //             ),
-          //             Container(
-          //               margin: const EdgeInsets.fromLTRB(5, 5, 20, 5),
-          //               padding: const EdgeInsets.symmetric(
-          //                   vertical: 5, horizontal: 5),
-          //               child: Text(
-          //                 controller.notifs[position],
-          //                 style: const TextStyle(
-          //                     fontSize: 17, fontWeight: FontWeight.bold),
-          //               ),
-          //             ),
-          //           ],
-          //         ),
-          //       );
-          //     })
         ]),
       )),
     );
