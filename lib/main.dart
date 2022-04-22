@@ -18,12 +18,12 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  final authController =
+  final loginController =
       Get.put<LoginController>(LoginController(), permanent: true);
   @override
   Widget build(BuildContext context) {
     return StreamBuilder<User?>(
-        stream: authController.streamAuthStatus,
+        stream: loginController.streamAuthStatus,
         builder: (context, snapshot) {
           print(snapshot.data);
           if (snapshot.connectionState == ConnectionState.active) {

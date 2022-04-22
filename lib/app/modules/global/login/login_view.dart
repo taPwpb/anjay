@@ -10,9 +10,7 @@ class Login extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    final _emailController = TextEditingController();
-    final _passwordController = TextEditingController();
-    final loginController = Get.find<LoginController>();
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Stack(
@@ -45,7 +43,7 @@ class Login extends GetView<LoginController> {
                 Container(
                   width: size.width * 0.6,
                   child: TextField(
-                    controller: _emailController,
+                    controller: controller.emailController,
                     style: const TextStyle(color: Colors.white54),
                     decoration: const InputDecoration(
                       labelText: "email",
@@ -61,7 +59,7 @@ class Login extends GetView<LoginController> {
                 Container(
                   width: size.width * 0.6,
                   child: TextField(
-                    controller: _passwordController,
+                    controller: controller.passwordController,
                     style: const TextStyle(color: Colors.white54),
                     decoration: const InputDecoration(
                       labelText: "password",
@@ -76,8 +74,8 @@ class Login extends GetView<LoginController> {
                 ),
                 InkWell(
                   onTap: () {
-                    loginController.login(
-                        _emailController.text, _passwordController.text);
+                    controller.login(controller.emailController.text,
+                        controller.passwordController.text);
                   },
                   child: Container(
                     margin: const EdgeInsets.only(top: 30),

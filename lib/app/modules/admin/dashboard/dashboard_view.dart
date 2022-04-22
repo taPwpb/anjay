@@ -5,6 +5,7 @@ import 'package:pwpb1/app/modules/admin/aset_ruang/aset_ruang_view.dart';
 import 'package:pwpb1/app/modules/admin/dashboard/dashboard_controller.dart';
 import 'package:pwpb1/app/modules/admin/data_barang/data_barang_view.dart';
 import 'package:pwpb1/app/modules/admin/pengajuan/pengajuan_view.dart';
+import 'package:pwpb1/routes/pages.dart';
 
 import '../home/home_view.dart';
 
