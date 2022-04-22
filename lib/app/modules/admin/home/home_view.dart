@@ -57,64 +57,66 @@ class PetugasGudangHome extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               color: const Color(0xff31314f),
             ),
-            child: ListView(shrinkWrap: true, children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    margin: const EdgeInsets.only(right: 15),
-                    child: const Icon(
-                      FontAwesomeIcons.bell,
-                      color: Color(0xffBA9D4B),
-                      size: 27,
+            child: Container(
+              margin: EdgeInsets.only(top: 20, bottom: 20),
+              child: ListView(shrinkWrap: true, children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      margin: const EdgeInsets.only(right: 15),
+                      child: const Icon(
+                        FontAwesomeIcons.bell,
+                        color: Color(0xffBA9D4B),
+                        size: 27,
+                      ),
                     ),
-                  ),
-                  const Text(
-                    "Daftar Pengajuan",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
-                        fontWeight: FontWeight.w500),
-                  ),
-                ],
-              ),
-              ListView.builder(
-                  shrinkWrap: true,
-                  itemCount: controller.notifs.length,
-                  itemBuilder: (context, position) {
-                    return Container(
-                      margin: const EdgeInsets.symmetric(
-                          vertical: 14, horizontal: 30),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Row(
-                        children: [
-                          Container(
-                            margin: const EdgeInsets.all(15),
-                            height: 20,
-                            width: 20,
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Color(0xffBA9D4B),
+                    const Text(
+                      "Daftar Pengajuan",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          fontWeight: FontWeight.w500),
+                    ),
+                  ],
+                ),
+                ListView.builder(
+                    shrinkWrap: true,
+                    itemCount: controller.notifs.length,
+                    itemBuilder: (context, position) {
+                      return Container(
+                        margin: const EdgeInsets.symmetric(
+                            vertical: 14, horizontal: 30),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Row(
+                          children: [
+                            Container(
+                              margin: const EdgeInsets.all(15),
+                              height: 20,
+                              width: 20,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Color(0xffBA9D4B),
+                              ),
                             ),
-                          ),
-                          Container(
-                            margin: const EdgeInsets.fromLTRB(5, 5, 20, 5),
-                            padding: const EdgeInsets.symmetric(
-                                vertical: 5, horizontal: 5),
-                            child: Text(
-                              controller.notifs[position],
-                              style: const TextStyle(
-                                  fontSize: 17, fontWeight: FontWeight.bold),
+                            Container(
+                              margin: const EdgeInsets.fromLTRB(5, 5, 20, 5),
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 5, horizontal: 5),
+                              child: Text(
+                                controller.notifs[position],
+                                style: child_text,
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
-                    );
-                  })
-            ]),
+                          ],
+                        ),
+                      );
+                    })
+              ]),
+            ),
           ),
           // generateList()
         ]),
