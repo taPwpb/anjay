@@ -1,0 +1,15 @@
+return StreamBuilder<User?>(
+      stream: authController.streamAuthStatus,
+      builder: (context, snapshot) {
+        print(snapshot.data);
+        if (snapshot.connectionState == ConnectionState.active) {
+          return GetMaterialApp(
+            debugShowCheckedModeBanner: false,
+            initialRoute: Routes.SPLASH,
+            theme: appThemeData,
+            getPages: AppPages.pages,
+            home: snapshot.data != null ? PetugasGudangHome() : Splash(),
+          );
+        }
+        return const Loading();
+      },
