@@ -2,12 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pwpb1/app/modules/admin/home/home_view.dart';
-import 'package:pwpb1/app/modules/global/login/login_controller.dart';
-import 'package:pwpb1/app/modules/global/splash/splash_binding.dart';
-import 'package:pwpb1/app/modules/global/splash/splash_view.dart';
-import 'package:pwpb1/core/utils/loading.dart';
-
+import './app/modules/global/login/login_controller.dart';
+import './core/utils/loading.dart';
 import 'core/theme/app_theme.dart';
 import 'routes/pages.dart';
 

@@ -7,7 +7,7 @@ import 'package:pwpb1/app/modules/global/login/login_controller.dart';
 import 'package:pwpb1/core/theme/text_theme.dart';
 import 'dart:async';
 
-class PetugasGudangHome extends StatelessWidget {
+class PetugasGudangHome extends GetView<PetugasGudangHomeController> {
   final controller = Get.put(PetugasGudangHomeController());
 
   @override
