@@ -12,8 +12,8 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\xampp\htdocs\anjay\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\xampp\htdocs\anjay\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->C:\Users\zahro\OneDrive\Dokumen\sekolah\pwpb1\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\zahro\OneDrive\Dokumen\sekolah\pwpb1\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 15-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\zahro\.gradle\caches\transforms-2\files-2.1\0cd31a8007b82ec10dce55ca37be1d81\jetified-firebase-auth-21.0.3\AndroidManifest.xml:24:5-79
 15-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\zahro\.gradle\caches\transforms-2\files-2.1\0cd31a8007b82ec10dce55ca37be1d81\jetified-firebase-auth-21.0.3\AndroidManifest.xml:24:22-76
@@ -59,25 +59,25 @@
 54            android:value="2" />
 55
 56        <service
-56-->[:firebase_auth] C:\xampp\htdocs\anjay\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+56-->[:firebase_auth] C:\Users\zahro\OneDrive\Dokumen\sekolah\pwpb1\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 57            android:name="com.google.firebase.components.ComponentDiscoveryService"
-57-->[:firebase_auth] C:\xampp\htdocs\anjay\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+57-->[:firebase_auth] C:\Users\zahro\OneDrive\Dokumen\sekolah\pwpb1\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 58            android:directBootAware="true"
 58-->[com.google.firebase:firebase-common:20.1.0] C:\Users\zahro\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
 59            android:exported="false" >
 59-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\zahro\.gradle\caches\transforms-2\files-2.1\0cd31a8007b82ec10dce55ca37be1d81\jetified-firebase-auth-21.0.3\AndroidManifest.xml:66:13-37
 60            <meta-data
-60-->[:firebase_auth] C:\xampp\htdocs\anjay\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+60-->[:firebase_auth] C:\Users\zahro\OneDrive\Dokumen\sekolah\pwpb1\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 61                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
-61-->[:firebase_auth] C:\xampp\htdocs\anjay\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+61-->[:firebase_auth] C:\Users\zahro\OneDrive\Dokumen\sekolah\pwpb1\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 62                android:value="com.google.firebase.components.ComponentRegistrar" />
-62-->[:firebase_auth] C:\xampp\htdocs\anjay\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+62-->[:firebase_auth] C:\Users\zahro\OneDrive\Dokumen\sekolah\pwpb1\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 63            <meta-data
-63-->[:firebase_core] C:\xampp\htdocs\anjay\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+63-->[:firebase_core] C:\Users\zahro\OneDrive\Dokumen\sekolah\pwpb1\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 64                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-64-->[:firebase_core] C:\xampp\htdocs\anjay\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+64-->[:firebase_core] C:\Users\zahro\OneDrive\Dokumen\sekolah\pwpb1\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 65                android:value="com.google.firebase.components.ComponentRegistrar" />
-65-->[:firebase_core] C:\xampp\htdocs\anjay\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+65-->[:firebase_core] C:\Users\zahro\OneDrive\Dokumen\sekolah\pwpb1\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 66            <meta-data
 66-->[com.google.firebase:firebase-auth:21.0.3] C:\Users\zahro\.gradle\caches\transforms-2\files-2.1\0cd31a8007b82ec10dce55ca37be1d81\jetified-firebase-auth-21.0.3\AndroidManifest.xml:67:13-69:85
 67                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"

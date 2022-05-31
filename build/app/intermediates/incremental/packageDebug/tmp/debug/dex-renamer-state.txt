@@ -1,7 +1,7 @@
-#Sat Apr 23 19:10:38 ICT 2022
-base.1=C\:\\xampp\\htdocs\\anjay\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
+#Wed Jun 01 05:00:31 ICT 2022
+base.1=C\:\\Users\\zahro\\OneDrive\\Dokumen\\sekolah\\pwpb1\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes2.dex
 path.1=classes2.dex
-base.0=C\:\\xampp\\htdocs\\anjay\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.0=C\:\\Users\\zahro\\OneDrive\\Dokumen\\sekolah\\pwpb1\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex
