@@ -67,7 +67,7 @@ class PetugasGudangAsetRuang extends GetView<PetugasGudangAsetRuangController> {
 
   Widget TableAsetRuang() {
     return DataTable(
-      columnSpacing: 0,
+      columnSpacing: 100,
       sortColumnIndex: controller.currentSortColumn.value,
       sortAscending: controller.isAscending.value,
       dividerThickness: 5,

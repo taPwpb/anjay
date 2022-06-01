@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">333412822158-g5kircu6iigd11v5ulc5neg7qjlplr2o.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">333412822158</string>
+    <string name="google_api_key" translatable="false">AIzaSyA6ra3IaoEizYafFmHzen2qhbuM_3tn0Fs</string>
+    <string name="google_app_id" translatable="false">1:333412822158:android:00278af42678365735eddf</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA6ra3IaoEizYafFmHzen2qhbuM_3tn0Fs</string>
+    <string name="google_storage_bucket" translatable="false">camat-tapwpb.appspot.com</string>
+    <string name="project_id" translatable="false">camat-tapwpb</string>
+</resources>

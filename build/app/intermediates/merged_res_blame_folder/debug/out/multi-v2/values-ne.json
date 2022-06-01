@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\xampp\\htdocs\\anjay\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ne\\values-ne.xml",
+            "outputFile": "C:\\Users\\zahro\\OneDrive\\Dokumen\\sekolah\\pwpb1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ne\\values-ne.xml",
             "map": [
                 {
                     "source": "C:\\Users\\zahro\\.gradle\\caches\\transforms-2\\files-2.1\\4a1e8147c3db656939cfc830651ce63e\\jetified-play-services-basement-18.0.0\\res\\values-ne\\values.xml",
