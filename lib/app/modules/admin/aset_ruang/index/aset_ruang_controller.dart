@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 class PetugasGudangAsetRuangController extends GetxController {
@@ -12,7 +14,12 @@ class PetugasGudangAsetRuangController extends GetxController {
     {'id': '8', 'kelas': 'Ruang Teori 2', 'jumlah': '16', 'icon': 'person'},
     {'id': '9', 'kelas': 'Ruang Teori 3', 'jumlah': '56', 'icon': 'person'},
     {'id': '10', 'kelas': 'Ruang Teori 4', 'jumlah': '96', 'icon': 'person'},
-    {'id': '11', 'kelas': 'Ruang Teori 5', 'jumlah': '12', 'icon': 'person'},
+    {
+      'id': '11',
+      'kelas': 'Ruang Teori 5',
+      'jumlah': '12',
+      'icon': 'person',
+    },
   ].obs;
 
   var currentSortColumn = 0.obs;

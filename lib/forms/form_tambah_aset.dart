@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 
 class FormTambahAset extends StatefulWidget {
   const FormTambahAset({Key? key}) : super(key: key);
@@ -20,7 +21,9 @@ class _FormTambahAsetState extends State<FormTambahAset> {
               decoration: const BoxDecoration(
                   shape: BoxShape.circle, color: Color(0xffBA9D4B)),
               child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.back();
+                  },
                   icon: const Icon(FontAwesomeIcons.angleLeft)),
             ),
             Container(
@@ -73,7 +76,6 @@ class _FormState extends State<Form> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         //icon
-
         Container(
           margin: const EdgeInsets.only(left: 12, top: 35, bottom: 10),
           child: const Text(
